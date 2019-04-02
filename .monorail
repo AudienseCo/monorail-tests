@@ -4,8 +4,43 @@
     "devBranch": "dev",
     "deployedLabel": "deployed"
   },
-  "services": {
-  },
-  "slack": {
+  "deploy": {
+    groupBy: "nodeVersion",
+    "services": [
+      {
+        "githubLabel": "globalreports",
+        "deployTo": [
+          'globalreports-as'
+        ],
+        settings: {
+          nodeVersion: 'v8.6.0',
+          grunt: false,
+          statics: false
+        }
+      },
+      {
+        "githubLabel": "admin panel",
+        "deployTo": [
+          'adminpanel-as'
+        ],
+        settings: {
+          nodeVersion: 'v10.0.0',
+          grunt: false,
+          statics: false
+        }
+      },
+      {
+        "githubLabel": "dashboard",
+        "deployTo": [
+          'dashboard-as',
+          'task-as'
+        ],
+        settings: {
+          nodeVersion: 'v8.6.0',
+          grunt: true,
+          statics: true
+        }
+      }
+    ]
   }
 }
