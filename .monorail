@@ -1,0 +1,10 @@
+{
+  github: {
+    masterBranch: 'master',
+    devBranch: 'dev'
+  },
+  services: {
+  },
+  slack: {
+  }
+}
