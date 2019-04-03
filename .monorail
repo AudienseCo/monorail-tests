@@ -13,7 +13,7 @@
         "token": "API token",
         "cause": "Build triggered with love by Monorail"
       }
-    }
+    },
     "CIJobs": {
       "nodejs v8.6.0": {
         "CIService": "jenkins",
@@ -23,7 +23,7 @@
           "separator": ","
         },
         "defaultParams": {
-          "token": "job token"
+          "token": "job token",
           "branch": "dev",
           "node_version": "v8.6.0",
           "grunt": false,
@@ -39,7 +39,7 @@
           "separator": ","
         },
         "defaultParams": {
-          "token": "job token"
+          "token": "job token",
           "branch": "dev",
           "node_version": "v10.0.0",
           "grunt": false,
@@ -47,7 +47,7 @@
           "statics": false
         }
       },
-      "spark audiense-insights: {
+      "spark audiense-insights": {
         "CIService": "jenkins",
         "jobName": "data-pipeline-spark-build-deploy-service",
         "servicesParam": {
@@ -55,7 +55,7 @@
           "separator": "???"
         },
         "defaultParams": {
-          "token": "job token"
+          "token": "job token",
           "source_version": "dev",
           "sbt_folder": "spark/audiense-insights",
           "jar_path": "target/scala-2.11/AudienseInsights.jar",
@@ -64,7 +64,7 @@
           "action": "deploy"
         }
       },
-      "lambda: {
+      "lambda": {
         "CIService": "jenkins",
         "jobName": "lambda-deploy-service",
         "servicesParam": {
@@ -72,7 +72,7 @@
           "separator": ";"
         },
         "defaultParams": {
-          "token": "job token"
+          "token": "job token",
           "source_version": "dev",
           "environment": "prod",
           "alias_name": "",
@@ -99,11 +99,11 @@
         "params": {
         }
       },
-      "globalreports": {
+      "dashboard": {
         "CIJob": "nodejs v8.6.0",
         "deployTo": [
           "dashboard-as",
-          "task-as'
+          "task-as"
         ],
         "params": {
           "grunt": true,
