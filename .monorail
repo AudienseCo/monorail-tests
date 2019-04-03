@@ -8,10 +8,13 @@
   "deploy": {
     "CIServices": {
       "jenkins": {
-        "url": "",
-        "user": "systems_worker",
-        "token": "API token",
-        "cause": "Build triggered with love by Monorail"
+        "driver": "jenkins",
+        "settings": {
+          "url": "",
+          "user": "systems_worker",
+          "token": "API token",
+          "cause": "Build triggered with love by Monorail"
+        }
       }
     },
     "CIJobs": {
@@ -91,16 +94,16 @@
         "params": {
         }
       },
-      "admin-panel": {
-        "CIJob": "nodejs v10.0.0",
+      "task-as": {
+        "CIJob": "nodejs v8.6.0",
         "deployTo": [
-          "adminpanel-as"
+          "task-as"
         ],
         "params": {
         }
       },
       "dashboard": {
-        "CIJob": "nodejs v8.6.0",
+        "CIJob": "nodejs v10.0.0",
         "deployTo": [
           "dashboard-as",
           "task-as"
