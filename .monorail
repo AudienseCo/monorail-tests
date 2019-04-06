@@ -10,10 +10,10 @@
       "jenkins": {
         "driver": "jenkins",
         "settings": {
-          "url": "",
-          "username": "",
-          "password": "",
-          "pollingInterval": 1000
+          "url": null,
+          "username": null,
+          "password": null,
+          "pollingInterval": null
         }
       }
     },
